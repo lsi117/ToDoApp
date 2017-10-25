@@ -10,3 +10,9 @@ const app = express()
 const app = express()
 
 app.use(methodOverride('_method'))
+
+
+//configurations
+app.use(logger('dev'))
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended:false}))
