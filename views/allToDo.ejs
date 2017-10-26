@@ -1,0 +1,39 @@
+
+<% include ./partials/boilerplate.ejs %>
+
+<% allData.forEach((todo) => { %>
+<div class="container">
+    <hr>
+ <%= todo.chore %>
+     <hr>
+ <br />
+      <hr>
+<div class="container">
+ <%= todo.description %>
+  </div>
+      <hr>
+  <br />
+     <hr>
+<div class="container">
+<%= todo.status %>
+  </div>
+  <hr>
+   <br />
+
+</div>
+
+<% }) %>
+
+
+
+
+<%= allData.chore %>
+
+
+
+
+
+
+
+
+<% include ./partials/end.ejs %>
