@@ -36,7 +36,7 @@ app.get('/',(req,res)=>{
 
 //route requires
 const toDoRoutes = require('./routes/toDoRoutes.js')
-app.use('/alltodo',toDoRoutes) //URL PATH
+app.use('/alltodo',toDoRoutes) //URL PATH, the path NAME can be
 
 //catchall
 app.get('*',(req,res)=>{

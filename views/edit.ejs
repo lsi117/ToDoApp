@@ -1,25 +1,9 @@
 <% include ./partials/boilerplate.ejs %>
 
-<div class="container">
-<h1>To-Do List</h1>
-</div>
-
-<br />
-<!--we pass the data into this, but this data will have to be dependent on
-USER INPUT THROUGH A FORM -->
-<div class="container">
-<p><%= allData.chore%></p>
-<p><%= allData.description%></p>
-<p><%= allData.status%></p>
-</div>
-
-<div class="container">
-<!--double check acion-->
-
 
 <div class="container">
   <h1>Updated!</h1>
-  <form action="/allToDo/<%= allData.id%>?_method=PUT" method="POST" accept-charset="utf-8">
+  <form action="/allToDo/<%= allData.id%>" method="POST" accept-charset="utf-8">
       <input
         type="text"
         name="chore"
@@ -38,6 +22,8 @@ USER INPUT THROUGH A FORM -->
       <input type="submit" value="Edit it!" />
 </div>
 
-</div>
+
+<a href="/allToDo">Back to do list</a>
+
 
 <% include ./partials/end.ejs %>

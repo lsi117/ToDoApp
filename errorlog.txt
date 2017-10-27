@@ -1,0 +1,79 @@
+
+SELECT * FROM list
+[ anonymous {
+    id: 1,
+    chore: 'buy milk',
+    description: 'need to buy whole milk',
+    status: 'incomplete' },
+  anonymous {
+    id: 2,
+    chore: 'clean dishes',
+    description: 'wash all dirty dishes',
+    status: 'incomplete' },
+  anonymous {
+    id: 3,
+    chore: 'play videogames',
+    description: 'play mount and blade warband',
+    status: 'complete' },
+  anonymous {
+    id: 4,
+    chore: 'go for a nice jog',
+    description: 'go to the park and jog',
+    status: 'incomplete' },
+  anonymous {
+    id: 5,
+    chore: 'make dinner',
+    description: 'make mac and cheese',
+    status: 'complete' },
+  anonymous {
+    id: 6,
+    chore: 'buy train tickets',
+    description: 'get a monthly ticket',
+    status: 'complete' } ]
+GET /alltodo 500 8.239 ms - 790
+Error: Failed to lookup view "allToDo-index" in views directory "/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/views"
+    at Function.render (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/express/lib/application.js:580:17)
+    at ServerResponse.render (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/express/lib/response.js:1008:7)
+    at List.findAll.then (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/controller/toDoController.js:9:9)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:188:7)
+
+
+
+-----^ err above
+
+
+
+    GET /alltodo/1 500 9.903 ms - 1605
+SyntaxError: Invalid regular expression: missing / in /Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/views/single.ejs while compiling ejs
+
+If the above error is not helpful, you may want to try EJS-Lint:
+https://github.com/RyanZim/EJS-Lint
+    at new Function (<anonymous>)
+    at Template.compile (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/ejs/lib/ejs.js:549:12)
+    at Object.compile (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/ejs/lib/ejs.js:358:16)
+    at handleCache (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/ejs/lib/ejs.js:201:18)
+    at tryHandleCache (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/ejs/lib/ejs.js:223:14)
+    at View.exports.renderFile [as engine] (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/ejs/lib/ejs.js:437:10)
+    at View.render (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/express/lib/view.js:135:8)
+    at tryRender (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/express/lib/application.js:640:10)
+    at Function.render (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/express/lib/application.js:592:3)
+    at ServerResponse.render (/Users/laureninacio/wdi/Projects/Unit_02/hw/ToDoApp/node_modules/express/lib/response.js:1008:7)
+
+    err above -----^
+
+
+    Error: Could not find include include file.
+    at getIncludePath (https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:2205)
+    at includeSource (https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:3335)
+    at https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:8817
+    at Array.forEach (<anonymous>)
+    at Template.generateSource (https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:8298)
+    at Template.compile (https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:6387)
+    at Object.compile (https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:4342)
+    at handleCache (https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:2785)
+    at Object.exports.render (https://npmcdn.com/ejs@2.5.7/ejs.min.js:1:4495)
+    at Array.update (https://ionicabizau.github.io/ejs-playground/js/main.js:11:26)
+
+
+    err above -----^
